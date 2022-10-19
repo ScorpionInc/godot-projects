@@ -1,0 +1,158 @@
+[gd_scene load_steps=19 format=3 uid="uid://c0aej6n6anmtk"]
+
+[ext_resource type="Texture2D" uid="uid://c0xnuqsej81a3" path="res://Images/icon.svg" id="1_sqmlt"]
+[ext_resource type="Texture2D" uid="uid://yuuqbpjyykqq" path="res://Images/icon_A1R5G5B5.bmp" id="2_k4r3d"]
+[ext_resource type="Texture2D" uid="uid://c5psjeql26hfs" path="res://Images/icon_A8R8G8B8.bmp" id="2_uxj78"]
+[ext_resource type="Texture2D" uid="uid://xpnre2au5rai" path="res://Images/icon_R8G8B8.bmp" id="3_vn0nq"]
+[ext_resource type="Texture2D" uid="uid://b60xmmol7r4rc" path="res://Images/icon_R5G6B5.bmp" id="4_2k77p"]
+[ext_resource type="Texture2D" uid="uid://dqrfqiqq2ysca" path="res://Images/icon_RLE.bmp" id="4_cujgv"]
+[ext_resource type="Texture2D" uid="uid://b5mp356cpnksm" path="res://Images/icon_X8R8G8B8.bmp" id="5_5x4rl"]
+[ext_resource type="Texture2D" uid="uid://ddhwjixjurgw6" path="res://Images/icon_X1R5G5B5.bmp" id="7_pqb6o"]
+[ext_resource type="Texture2D" uid="uid://cmld7ukpfv4ur" path="res://Images/RedYellow.bmp" id="9_bxo5s"]
+[ext_resource type="Texture2D" uid="uid://cr375h7cxskax" path="res://Images/Greeny.bmp" id="10_nett6"]
+[ext_resource type="Texture2D" uid="uid://c8uuyibjo1orb" path="res://Images/Blue.bmp" id="11_020r5"]
+[ext_resource type="Texture2D" uid="uid://c7duiedodmss0" path="res://Images/32x32 Test-Image-RGB-64-128-192-X1R5G5B5.bmp" id="12_bbvj3"]
+
+[sub_resource type="Gradient" id="Gradient_rgep2"]
+colors = PackedColorArray(0.120807, 1.05888e-06, 0.604945, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kivpv"]
+gradient = SubResource("Gradient_rgep2")
+width = 128
+height = 128
+
+[sub_resource type="Gradient" id="Gradient_vpgga"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1g2mb"]
+gradient = SubResource("Gradient_vpgga")
+width = 128
+height = 128
+fill_from = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="Gradient_s4ljs"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_el46k"]
+gradient = SubResource("Gradient_s4ljs")
+width = 32
+height = 32
+
+[node name="Node2d" type="Node2D"]
+
+[node name="icon_svg" type="Sprite2D" parent="."]
+texture = ExtResource("1_sqmlt")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_svg"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_A1R5G5B5" type="Sprite2D" parent="."]
+position = Vector2(150, 0)
+texture = ExtResource("2_k4r3d")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_A1R5G5B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_1g2mb")
+centered = false
+
+[node name="icon_A8R8G8B8" type="Sprite2D" parent="."]
+position = Vector2(300, 0)
+texture = ExtResource("2_uxj78")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_A8R8G8B8"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_R5G6B5" type="Sprite2D" parent="."]
+position = Vector2(450, 0)
+texture = ExtResource("4_2k77p")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_R5G6B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_R8G8B8" type="Sprite2D" parent="."]
+position = Vector2(600, 0)
+texture = ExtResource("3_vn0nq")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_R8G8B8"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_RLE" type="Sprite2D" parent="."]
+position = Vector2(750, 0)
+texture = ExtResource("4_cujgv")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_RLE"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_X1R5G5B5" type="Sprite2D" parent="."]
+position = Vector2(900, 0)
+texture = ExtResource("7_pqb6o")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_X1R5G5B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_X8R8G8B8" type="Sprite2D" parent="."]
+position = Vector2(0, 150)
+texture = ExtResource("5_5x4rl")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_X8R8G8B8"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_RedYellow_A1R5G5B5" type="Sprite2D" parent="."]
+position = Vector2(150, 150)
+texture = ExtResource("9_bxo5s")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_RedYellow_A1R5G5B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_Greeny_A1R5G5B5" type="Sprite2D" parent="."]
+position = Vector2(300, 150)
+texture = ExtResource("10_nett6")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_Greeny_A1R5G5B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_Blue_A1R5G5B5" type="Sprite2D" parent="."]
+position = Vector2(450, 150)
+texture = ExtResource("11_020r5")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_Blue_A1R5G5B5"]
+z_index = -1
+texture = SubResource("GradientTexture2D_kivpv")
+centered = false
+
+[node name="icon_TestImage_X1R5G5B6" type="Sprite2D" parent="."]
+position = Vector2(600, 150)
+texture = ExtResource("12_bbvj3")
+centered = false
+
+[node name="Background" type="Sprite2D" parent="icon_TestImage_X1R5G5B6"]
+z_index = -1
+texture = SubResource("GradientTexture2D_el46k")
+centered = false
