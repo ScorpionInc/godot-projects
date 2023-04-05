@@ -229,12 +229,12 @@ horizontal_alignment = 1
 position = Vector2(600, 200)
 centered = false
 
-[node name="Background" type="Sprite2D" parent="icon_TestImage_X1R5G5B6"]
+[node name="Background" type="Sprite2D" parent="icon_TestImage_X1R5G5B5"]
 z_index = -1
 texture = SubResource("GradientTexture2D_el46k")
 centered = false
 
-[node name="Label" type="Label" parent="icon_TestImage_X1R5G5B6"]
+[node name="Label" type="Label" parent="icon_TestImage_X1R5G5B5"]
 offset_top = 128.0
 offset_right = 130.0
 offset_bottom = 180.0
