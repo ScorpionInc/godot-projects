@@ -1,0 +1,88 @@
+[gd_scene load_steps=7 format=3 uid="uid://catgwwrmhu2pq"]
+
+[ext_resource type="Script" path="res://GenerateButton.gd" id="1_0xj0e"]
+[ext_resource type="Script" path="res://LoadButton.gd" id="2_374pl"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_iddlq"]
+font_size = 24
+font_color = Color(0.588235, 0.752941, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2va48"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_1dxfd"]
+font_size = 24
+font_color = Color(0, 0.588235, 0.752941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_s5d14"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="SceneRoot" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1150.0
+offset_bottom = 650.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(1150, 650)
+layout_mode = 2
+offset_right = 834.0
+offset_bottom = 630.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="CenterContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/HBoxContainer/VBoxContainer2/CenterContainer"]
+layout_mode = 2
+text = "Generated Certificate Value:"
+label_settings = SubResource("LabelSettings_iddlq")
+
+[node name="GeneratedCertField" type="RichTextLabel" parent="CenterContainer/HBoxContainer/VBoxContainer2"]
+custom_minimum_size = Vector2(425, 600)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_2va48")
+text = "Click Generate to create your first certificate!"
+scroll_following = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="GenerateButton" type="Button" parent="CenterContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "Generate New Certificate <<"
+script = ExtResource("1_0xj0e")
+
+[node name="LoadButton" type="Button" parent="CenterContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+disabled = true
+text = "Load Certificate from left >>"
+script = ExtResource("2_374pl")
+
+[node name="VBoxContainer3" type="VBoxContainer" parent="CenterContainer/HBoxContainer"]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/HBoxContainer/VBoxContainer3"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/HBoxContainer/VBoxContainer3/CenterContainer"]
+layout_mode = 2
+text = "Loaded Certificate Value:"
+label_settings = SubResource("LabelSettings_1dxfd")
+
+[node name="LoadedCertField" type="RichTextLabel" parent="CenterContainer/HBoxContainer/VBoxContainer3"]
+custom_minimum_size = Vector2(425, 600)
+layout_mode = 2
+theme_override_styles/normal = SubResource("StyleBoxFlat_s5d14")
+text = "Load in the value generated in the other field with the \"Load\" Button!"
+scroll_following = true
+
+[connection signal="button_up" from="CenterContainer/HBoxContainer/VBoxContainer/GenerateButton" to="CenterContainer/HBoxContainer/VBoxContainer/GenerateButton" method="_on_button_up"]
+[connection signal="button_up" from="CenterContainer/HBoxContainer/VBoxContainer/LoadButton" to="CenterContainer/HBoxContainer/VBoxContainer/LoadButton" method="_on_button_up"]
