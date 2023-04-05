@@ -1,17 +1,10 @@
-[gd_scene load_steps=19 format=3 uid="uid://c0aej6n6anmtk"]
+[gd_scene load_steps=12 format=3 uid="uid://c0aej6n6anmtk"]
 
-[ext_resource type="Texture2D" uid="uid://buw5wi8mceynn" path="res://Images/icon.svg" id="1_sqmlt"]
-[ext_resource type="Texture2D" uid="uid://qsv3fk6cmsew" path="res://Images/icon_A1R5G5B5.bmp" id="2_k4r3d"]
-[ext_resource type="Texture2D" uid="uid://bjgl3xijxvbly" path="res://Images/icon_A8R8G8B8.bmp" id="2_uxj78"]
-[ext_resource type="Texture2D" uid="uid://dgdwjp4xymy4e" path="res://Images/icon_R8G8B8.bmp" id="3_vn0nq"]
-[ext_resource type="Texture2D" uid="uid://b8oh4l3ohuexj" path="res://Images/icon_R5G6B5.bmp" id="4_2k77p"]
-[ext_resource type="Texture2D" uid="uid://bh2hr0bv22hyn" path="res://Images/icon_RLE.bmp" id="4_cujgv"]
-[ext_resource type="Texture2D" uid="uid://dbepm0bsxwelx" path="res://Images/icon_X8R8G8B8.bmp" id="5_5x4rl"]
-[ext_resource type="Texture2D" uid="uid://d2ae46s8hp801" path="res://Images/icon_X1R5G5B5.bmp" id="7_pqb6o"]
-[ext_resource type="Texture2D" uid="uid://c2e1qkewkajek" path="res://Images/RedYellow.bmp" id="9_bxo5s"]
-[ext_resource type="Texture2D" uid="uid://ttw57uq3wa5c" path="res://Images/Greeny.bmp" id="10_nett6"]
-[ext_resource type="Texture2D" uid="uid://drdmse1cgnh3y" path="res://Images/Blue.bmp" id="11_020r5"]
-[ext_resource type="Texture2D" uid="uid://bdiseiubnvgig" path="res://Images/32x32 Test-Image-RGB-64-128-192-X1R5G5B5.bmp" id="12_bbvj3"]
+[ext_resource type="Texture2D" uid="uid://dsy1abhnxnrbr" path="res://Images/icon.svg" id="1_sqmlt"]
+[ext_resource type="Texture2D" uid="uid://bkhpqbl87ibj2" path="res://Images/icon_A8R8G8B8.bmp" id="2_uxj78"]
+[ext_resource type="Texture2D" uid="uid://crcfsb4uk4n6h" path="res://Images/icon_R8G8B8.bmp" id="3_vn0nq"]
+[ext_resource type="Texture2D" uid="uid://cjy3gr6icwr0c" path="res://Images/icon_RLE.bmp" id="4_cujgv"]
+[ext_resource type="Texture2D" uid="uid://lwbeip4ili2c" path="res://Images/icon_X8R8G8B8.bmp" id="5_5x4rl"]
 
 [sub_resource type="Gradient" id="Gradient_rgep2"]
 colors = PackedColorArray(0.120807, 1.05888e-06, 0.604945, 1, 0, 0, 0, 1)
@@ -57,7 +50,6 @@ horizontal_alignment = 1
 
 [node name="icon_A1R5G5B5" type="Sprite2D" parent="."]
 position = Vector2(150, 0)
-texture = ExtResource("2_k4r3d")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_A1R5G5B5"]
@@ -93,7 +85,6 @@ horizontal_alignment = 1
 
 [node name="icon_R5G6B5" type="Sprite2D" parent="."]
 position = Vector2(450, 0)
-texture = ExtResource("4_2k77p")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_R5G6B5"]
@@ -147,7 +138,6 @@ horizontal_alignment = 1
 
 [node name="icon_X1R5G5B5" type="Sprite2D" parent="."]
 position = Vector2(900, 0)
-texture = ExtResource("7_pqb6o")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_X1R5G5B5"]
@@ -183,7 +173,6 @@ horizontal_alignment = 1
 
 [node name="icon_RedYellow_A1R5G5B5" type="Sprite2D" parent="."]
 position = Vector2(150, 200)
-texture = ExtResource("9_bxo5s")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_RedYellow_A1R5G5B5"]
@@ -202,7 +191,6 @@ horizontal_alignment = 1
 
 [node name="icon_Greeny_A1R5G5B5" type="Sprite2D" parent="."]
 position = Vector2(300, 200)
-texture = ExtResource("10_nett6")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_Greeny_A1R5G5B5"]
@@ -221,7 +209,6 @@ horizontal_alignment = 1
 
 [node name="icon_Blue_A1R5G5B5" type="Sprite2D" parent="."]
 position = Vector2(450, 200)
-texture = ExtResource("11_020r5")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_Blue_A1R5G5B5"]
@@ -240,7 +227,6 @@ horizontal_alignment = 1
 
 [node name="icon_TestImage_X1R5G5B6" type="Sprite2D" parent="."]
 position = Vector2(600, 200)
-texture = ExtResource("12_bbvj3")
 centered = false
 
 [node name="Background" type="Sprite2D" parent="icon_TestImage_X1R5G5B6"]
@@ -252,6 +238,6 @@ centered = false
 offset_top = 128.0
 offset_right = 130.0
 offset_bottom = 180.0
-text = "X1R5G5B6.bmp
+text = "X1R5G5B5.bmp
 Test Image"
 horizontal_alignment = 1
